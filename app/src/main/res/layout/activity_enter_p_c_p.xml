@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg4"
+    android:layout_height="match_parent"
+    tools:context=".EnterPCP">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#AA00FF"
+                android:gravity="center"
+                android:padding="4dp"
+                android:textColor="#fff"
+                android:text="Plant Critical Parameter"
+                android:textSize="19sp"
+                android:layout_marginBottom="13dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:text="Boiler Steamflow "
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e1"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#181D55"
+                    android:hint=" TPH " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:text="Boiler Feed Waterflow"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e2"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#181D55"
+                    android:hint=" TPH " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Turbine Load"
+                    android:textStyle="italic"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e3"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:textColor="#181D55"
+                    android:hint=" MW  " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Turbin exhout presuure"
+                    android:textStyle="italic"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e4"
+                    android:background="@drawable/inputbg"
+                    android:padding="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:textColor="#181D55"
+                    android:hint="Enter Moisture " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Coal flow"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e5"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:textColor="#181D55"
+                    android:hint=" TPH " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="D/A level"
+                    android:textStyle="italic"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:id="@+id/e6"
+                    android:textColor="#181D55"
+                    android:hint=" % " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Hot Well Level"
+                    android:textStyle="italic"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e7"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginRight="8dp"
+                    android:textColor="#181D55"
+                    android:hint=" % " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Drum Level"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e8"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:textColor="#181D55"
+                    android:hint=" % " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Steam Pressure of Boiler Outlet"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/e9"
+                    android:textColor="#181D55"
+                    android:hint=" KG/CM^2 " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Steam Temperature at Boiler Outlet "
+                    android:textStyle="italic"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e10"
+                    android:background="@drawable/inputbg"
+                    android:padding="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:textColor="#181D55"
+                    android:hint=" C  " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Fixed Water Inlet Temperature"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e11"
+                    android:background="@drawable/inputbg"
+                    android:padding="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:textColor="#181D55"
+                    android:hint=" C " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="PA air flow"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e12"
+                    android:layout_marginRight="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:textColor="#181D55"
+                    android:hint=" TPH  " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="SA air flow"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e13"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="17dp"
+                    android:textColor="#181D55"
+                    android:hint=" TPH  " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="ID Fan Motor Loading"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e14"
+                    android:layout_marginRight="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="13dp"
+                    android:textColor="#181D55"
+                    android:hint=" amps  " />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Wind Box Pressure"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e15"
+                    android:layout_marginRight="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="13dp"
+                    android:textColor="#181D55"
+                    android:hint=" mWC  " />
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Furnace Temperature"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e16"
+                    android:layout_marginRight="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="13dp"
+                    android:textColor="#181D55"
+                    android:hint=" C  " />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Furnace draft"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e17"
+                    android:layout_marginRight="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="13dp"
+                    android:textColor="#181D55"
+                    android:hint="   " />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Steam Drum Pressure"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e18"
+                    android:layout_marginRight="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="13dp"
+                    android:textColor="#181D55"
+                    android:hint=" KG/CM^2  " />
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Flow Gas Exit Temperature"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e19"
+                    android:layout_marginRight="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="13dp"
+                    android:textColor="#181D55"
+                    android:hint=" C  " />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Bed Temperature"
+                    android:textStyle="italic"/>
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/e20"
+                    android:layout_marginRight="8dp"
+                    android:padding="8dp"
+                    android:background="@drawable/inputbg"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginBottom="13dp"
+                    android:textColor="#181D55"
+                    android:hint="  C " />
+
+
+            </LinearLayout>
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Submit record"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:background="@drawable/loginbg"
+                android:textColor="#fff"
+                android:layout_marginBottom="13dp"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/submit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powered by DNA"
+                android:textColor="#33691E"
+                android:textSize="15dp"
+                android:layout_gravity="center" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="17dp" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

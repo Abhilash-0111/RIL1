@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Inspection">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:textColor="#fff"
+        android:textSize="22sp"
+        android:layout_marginBottom="17dp"
+        android:text=" Field Inspection Round "
+        android:background="#FFB300" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical" >
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="17dp" />
+    -
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_marginLeft="8dp"
+        android:paddingLeft="8dp"
+        android:text="Name*"
+        android:textColor="#A19C9C"
+        />
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Operator Name"
+        android:textSize="17sp"
+        android:layout_margin="8dp"
+        android:backgroundTint="#3949AB"
+        android:textColor="#0C0C4E"
+        android:padding="8dp"
+        android:textColorHint="#C0121249"
+        android:inputType="textEmailAddress"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_marginLeft="8dp"
+        android:paddingLeft="8dp"
+        android:text="Detail*"
+        android:textColor="#A19C9C"
+        />
+
+    <EditText
+        android:id="@+id/e2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:textSize="17sp"
+        android:layout_margin="8dp"
+        android:backgroundTint="#3949AB"
+        android:textColor="#0C0C4E"
+        android:textColorHint="#0C0C4E"
+        android:hint="Enter Inspection Detail"
+        android:inputType="textPassword"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="17dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_marginLeft="8dp"
+        android:paddingLeft="8dp"
+        android:text="Inventory*"
+        android:textColor="#A19C9C"
+        />
+
+
+    <EditText
+        android:id="@+id/e3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="17sp"
+        android:backgroundTint="#3949AB"
+        android:padding="8dp"
+        android:textColor="#0C0C4E"
+        android:textColorHint="#0C0C4E"
+        android:hint="Enter Inventory Used"
+        android:inputType="text"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="17dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:layout_marginLeft="8dp"
+        android:paddingLeft="8dp"
+        android:text="Attach photo URL*"
+        android:textColor="#A19C9C"
+        />
+
+    <EditText
+        android:id="@+id/e4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter URL "
+        android:textSize="17sp"
+        android:inputType="text"
+        android:layout_margin="8dp"
+        android:backgroundTint="#3949AB"
+        android:padding="8dp"
+        android:textColor="#0C0C4E"
+        android:textColorHint="#0C0C4E"
+        />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="17dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginLeft="8dp"
+            android:paddingLeft="8dp"
+            android:text="Attach video URL*"
+            android:textColor="#A19C9C"
+            />
+
+        <EditText
+            android:id="@+id/e5"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter URL "
+            android:textSize="17sp"
+            android:inputType="text"
+            android:layout_margin="8dp"
+            android:backgroundTint="#3949AB"
+            android:padding="8dp"
+            android:textColor="#0C0C4E"
+            android:textColorHint="#0C0C4E"
+            />
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="17dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:id="@+id/submit"
+            android:textColor="#fff"
+            android:text="Submit"
+            android:background="@drawable/loginbg3"/>
+
+
+    </LinearLayout>
+    </ScrollView></LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

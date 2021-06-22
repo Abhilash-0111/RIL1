@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#0288D1"
+    android:layout_height="match_parent"
+    tools:context=".PCP">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Load Data"
+            android:layout_gravity="left"
+            android:id="@+id/load"
+            android:background="#311B92"
+            android:textColor="#fff" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:id="@+id/updattime"
+                android:layout_weight="1"
+                android:padding="4dp"
+                android:background="#FBC02D"
+                android:text="Updated on:" />
+
+        </LinearLayout>
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t1"
+            android:padding="4dp"
+            android:background="#FFFFFF"
+            android:text="Boiler Steamflow =   _____TPH  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t2"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Boiler Feed Waterflow  =  _____TPH  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t3"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Turbine Load  =  _____MW  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t4"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Turbin exhout presuure  =  _____ata/mm of HG  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t5"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Coal flow    =   _____TPH  "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/t6"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="D/A level =   _____%  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t7"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Hot Well Level  =  _____%  "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t8"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Drum Level =   _____%  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t9"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Steam Pressure of Boiler Outlet =   _____KG/CM^2  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t10"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Steam Temperature at Boiler Outlet  =  _____ C "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t11"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Fixed Water Inlet Temperature  =  _____ C  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t12"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="PA air flow  =  _____TPH  "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t13"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="SA air flow  =  _____TPH  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t14"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="ID Fan Motor Loading  =  _____amps  "/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t15"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Wind Box Pressure  =  _____mWC  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t16"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Furnace Temperature  =  _____ C  "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t17"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Furnace draft =   _____mnC  "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t18"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Steam Drum Pressure  =  _____KG/CM^2  "/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t19"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Flow Gas Exit Temperature   =  _____C  "/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="17dp"
+            android:textSize="15sp"
+            android:id="@+id/t20"
+            android:padding="4dp"
+            android:background="#fff"
+            android:text="Bed Temperature  =  _____C  "/>
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

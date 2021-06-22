@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg4"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="0dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#AA00FF"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="#fff"
+        android:text="Efficiency Calculator"
+        android:textSize="19sp"
+        android:layout_marginBottom="13dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:text="Fixed carbon"
+    android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/c"
+        android:padding="8dp"
+        android:background="@drawable/inputbg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#181D55"
+        android:hint="Enter fixed carbon " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:text="Volatile matter"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/VM"
+        android:padding="8dp"
+        android:background="@drawable/inputbg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#181D55"
+        android:hint="Enter Volatile matter " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Ash"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/A"
+        android:padding="8dp"
+        android:background="@drawable/inputbg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="#181D55"
+        android:hint="Enter Ash  " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Moisture"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/M"
+        android:background="@drawable/inputbg"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="#181D55"
+        android:hint="Enter Moisture " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="GCV"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gcv"
+        android:padding="8dp"
+        android:background="@drawable/inputbg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="#181D55"
+        android:hint="Enter GCV " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Bottum ash"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/inputbg"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/bottumash"
+        android:textColor="#181D55"
+        android:hint="Enter bottum ash " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Fly ash"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/flyash"
+        android:padding="8dp"
+        android:background="@drawable/inputbg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginRight="8dp"
+        android:textColor="#181D55"
+        android:hint="Enter fly ash " />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Gas exit temperature"
+        android:textStyle="italic"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Tmax"
+        android:background="@drawable/inputbg"
+        android:padding="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="#181D55"
+        android:hint="Enter Gas exit temperature  " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Ambient temperature"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tmin"
+        android:background="@drawable/inputbg"
+        android:padding="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="#181D55"
+        android:hint="Enter ambient temperature " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Loss in fly ash"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/losifa"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:background="@drawable/inputbg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="#181D55"
+        android:hint="Enter loss of ignition in fly ash  " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Loss in bottum ash"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/losiba"
+        android:padding="8dp"
+        android:background="@drawable/inputbg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="17dp"
+        android:textColor="#181D55"
+        android:hint="Enter loss of ignition in bottum ash  " />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Excess O2"
+        android:textStyle="italic"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eo2"
+        android:layout_marginRight="8dp"
+        android:padding="8dp"
+        android:background="@drawable/inputbg"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="13dp"
+        android:textColor="#181D55"
+        android:hint="Enter excess O2  " />
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="calculate"
+        android:background="@drawable/loginbg"
+        android:textColor="#fff"
+        android:layout_margin="8dp"
+        android:id="@+id/b1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00796B"
+        android:padding="4dp"
+        android:id="@+id/dfgl"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00796B"
+        android:id="@+id/wfgl"
+        android:padding="4dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00796B"
+        android:id="@+id/shwpl"
+        android:padding="4dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00796B"
+        android:padding="4dp"
+        android:id="@+id/mca"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00796B"
+        android:id="@+id/ugl"
+        android:padding="4dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00796B"
+        android:id="@+id/L7"
+        android:padding="4dp"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00796B"
+        android:id="@+id/L8"
+        android:padding="4dp"
+        android:textSize="15sp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00796B"
+        android:id="@+id/ca"
+        android:padding="4dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00796B"
+        android:id="@+id/tl"
+        android:padding="4dp"
+        android:textSize="15sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#00796B"
+        android:id="@+id/be"
+        android:padding="4dp"
+        android:textSize="15sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:text="Submit record"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:background="@drawable/loginbg"
+        android:textColor="#fff"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="8dp"
+        android:id="@+id/submit" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Powered by DNA"
+        android:textColor="#33691E"
+        android:textSize="15dp"
+        android:layout_gravity="center" />
+<Space
+    android:layout_width="match_parent"
+    android:layout_height="17dp" />
+
+
+
+</LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="History"
+            android:textColor="#fff"
+            android:background="#00C853"
+            android:layout_height="wrap_content"
+            android:id="@+id/history"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Stolk"
+            android:background="#0091EA"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:id="@+id/stolk"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:text="Help"
+            android:background="#FFD600"
+            android:layout_height="wrap_content"
+            android:id="@+id/help"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

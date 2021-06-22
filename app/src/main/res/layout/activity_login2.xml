@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/bg3">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AA00FF"
+            android:gravity="center"
+            android:padding="4dp"
+            android:textColor="#fff"
+            android:text="DNA engineering solutions"
+            android:textSize="19sp"
+            android:layout_marginBottom="13dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email*"
+            android:layout_marginLeft="22dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/email"
+            android:layout_gravity="center"
+            android:layout_margin="22dp"
+            android:textSize="17sp"
+            android:hint="Enter email ID"
+            android:inputType="textEmailAddress"
+            android:textColor="#6A1B9A"
+            android:textColorHint="#6A189A"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password*"
+            android:layout_marginLeft="22dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:id="@+id/password"
+            android:layout_gravity="center"
+            android:layout_margin="22dp"
+            android:textSize="17sp"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:textColor="#6A1B9A"
+            android:textColorHint="#6A189A"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:text="Sign in"
+            android:background="@drawable/loginbg"
+            android:paddingRight="8dp"
+            android:textColor="#fff"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="22dp"
+            android:layout_gravity="center"
+            android:id="@+id/login" />
+
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_margin="22dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:background="@drawable/loginbg2"
+            android:textColor="#fff"
+            android:text="Sign up"
+            android:id="@+id/signup"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:layout_gravity="center" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Powered by DNA"
+                android:textColor="#33691E"
+                android:textSize="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                android:gravity="bottom"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contact at : abhlshtrpth13@gmail.com"
+                android:textColor="#33691E"
+                android:textSize="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

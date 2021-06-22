@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EquipRunStat">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Equipment Running Status"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:padding="4dp"
+        android:textSize="15sp"
+        android:background="@drawable/bgd1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pump"
+            android:background="#64DD17"
+            android:layout_margin="13dp"
+            android:layout_weight="1"
+            android:id="@+id/id1"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pump"
+            android:layout_margin="13dp"
+            android:background="#64DD17"
+            android:layout_weight="1"
+            android:id="@+id/id2"/>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_margin="13dp"
+            android:text="BFB #1A"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_margin="13dp"
+            android:text="BFB #1B"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pump"
+            android:background="#64DD17"
+            android:layout_margin="13dp"
+            android:layout_weight="1"
+            android:id="@+id/id3"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/pump"
+            android:layout_margin="13dp"
+            android:background="#64DD17"
+            android:layout_weight="1"
+            android:id="@+id/id4"/>
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_margin="13dp"
+            android:text="PA Fan #1A"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_margin="13dp"
+            android:text="PA Fan #1B"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
